@@ -1,0 +1,15 @@
+{%  extends "base.html"  %}
+
+{%  block content  %}
+<center>
+<div class="conatiner">
+  <div class="jumbotron" style="background-color : rgb(255,255,255);">
+      <form class="" action='summarising' method="post">
+        {% csrf_token %}
+        <textarea name="textsum" rows="15" cols="150" placeholder="Enter or Paste your text here!!"></textarea><br>
+        <input type="submit" class="btn btn-primary" name="" value="summarise!!">
+      </form>
+  </div>
+</div>
+</center>
+{%  endblock %}
